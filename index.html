@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -10,12 +9,12 @@
 
 <body id="corpo">
 
-    <form name="formulario">
+    <form id="formulario">
         Digite o valor em Binário:
-        <input type="text" name="binario">
-        <input type="submit" value="Converter" onclick="calcular(formulario.binario.value)">
+        <input type="text" name="bin" maxlength="8">
+        <button type="button" onclick="calcular(formulario.bin.value)">Converter</button>
     </form>
-    <p id="convertido">Valor convertido: </p>
+    <p id="convertido">Valor em Decimal: </p>
 </body>
 
 </html>
