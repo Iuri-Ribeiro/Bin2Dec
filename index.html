@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Bin2Dec</title>
-    <link rel="stylesheet" type="text/css" src="estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
     <script src="principal.js"></script>
 </head>
 
 <body id="corpo">
-
-    <form id="formulario">
-        Digite o valor em Binário:
-        <input type="text" name="bin" maxlength="8">
-        <button type="button" onclick="calcular(formulario.bin.value)">Converter</button>
-    </form>
-    <p id="convertido">Valor em Decimal: </p>
+    <div id="divPrincipal">
+        <h1>Bin2Dec</h1>
+        <p id="explicacao">Converte valores binários para decimais</p>
+        <br>
+        <form id="formulario">
+            Valor em Binário:
+            <input type="text" name="bin" maxlength="8">
+            <button type="button" onclick="calcular(formulario.bin.value)">Converter</button>
+        </form><br>
+        <p id="convertido">Valor em Decimal: </p>
+    </div>
 </body>
 
 </html>
